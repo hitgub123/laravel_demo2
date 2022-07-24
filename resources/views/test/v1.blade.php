@@ -1,6 +1,5 @@
 <br />现在时间：{{$date}}
 <br />一年后时间：{{date('Y-m-d H:i:s',$a1y)}}
-
 <br />
 @foreach($arr1 as $user)
     {{$user['id']}}---{{$user['name']}}<br />
