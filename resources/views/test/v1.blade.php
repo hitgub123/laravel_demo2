@@ -1,3 +1,6 @@
+<script type="text/javascript" src="{{asset('js')}}/app.js"></script>
+<script type="text/javascript" src="{{asset('js')}}/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="{{asset('js')}}/app.js"/>
 <br />现在时间：{{$date}}
 <br />一年后时间：{{date('Y-m-d H:i:s',$a1y)}}
 <br />
