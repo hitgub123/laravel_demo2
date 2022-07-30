@@ -1,4 +1,4 @@
-<script type="text/javascript" src="{{asset('js')}}/app.js"></script>
+<script type="text/javascript" src="{{asset('css')}}/app.css"></script>
 <script type="text/javascript" src="{{asset('js')}}/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="{{asset('js')}}/app.js"/>
 <br />现在时间：{{$date}}

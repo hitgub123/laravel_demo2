@@ -18,6 +18,9 @@ use Illuminate\Contracts\View\View;
 
 Route::get('/v1', [TestVIewController::class, 'v1']);
 Route::get('/v2', [TestVIewController::class, 'v2']);
+Route::get('/v3', [TestVIewController::class, 'v3'])->name('v3r');
+// Route::match(['get', 'post'],'/v4', [TestVIewController::class, 'v4'])->name('v4r');
+Route::post('/v4', [TestVIewController::class, 'v4'])->name('v4r');
 
 Route::get('/test1', [TestController::class, 'test1']);
 // Route::get('/test1', 'App\Http\Controllers\TestController@test1');
