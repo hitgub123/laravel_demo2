@@ -16,13 +16,15 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\TestViewController;
 use Illuminate\Contracts\View\View;
 
-Route::get('/v1', [TestVIewController::class, 'v1']);
+Route::get('/v1', [TestVIewController::class, 'v1'])->name('v1r');
 Route::get('/v2', [TestVIewController::class, 'v2']);
 Route::get('/v3', [TestVIewController::class, 'v3'])->name('v3r');
 // Route::match(['get', 'post'],'/v4', [TestVIewController::class, 'v4'])->name('v4r');
 Route::post('/v4', [TestVIewController::class, 'v4'])->name('v4r');
 Route::get('/v5', [TestVIewController::class, 'v5']);
 Route::get('/v55', [TestVIewController::class, 'v55']);
+Route::get('/v6', [TestVIewController::class, 'v6'])->name('v6r');
+Route::get('/v7', [TestVIewController::class, 'v7']);
 
 Route::get('/test1', [TestController::class, 'test1']);
 // Route::get('/test1', 'App\Http\Controllers\TestController@test1');

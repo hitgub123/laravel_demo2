@@ -87,4 +87,19 @@ class TestViewController extends Controller
             ['path' => $request->url(), 'query' => $request->query()]
         );
     }
+    public function v6()
+    {
+        $sql = "select * from users";
+        $datas = DB::select($sql);
+        // return json_encode($datas);
+        return response()->json($datas);
+    }
+
+    public function v7()
+    {
+        // return redirect('/v6');
+        // return redirect()->to('/v6');
+        return redirect(route('v1r'));
+        // return redirect()->to(route('v1r'));
+    }
 }
