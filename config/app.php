@@ -195,6 +195,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * diy
+         */   
+        Mews\Captcha\CaptchaServiceProvider::class,
+
     ],
 
     /*
@@ -211,6 +216,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
         //'DB' => Illuminate\Support\Facades\DB::class,
+
+        'Captcha' => Mews\Captcha\Facades\Captcha::class,
     ])->toArray(),
 
 ];

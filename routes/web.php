@@ -21,6 +21,8 @@ Route::get('/v2', [TestVIewController::class, 'v2']);
 Route::get('/v3', [TestVIewController::class, 'v3'])->name('v3r');
 // Route::match(['get', 'post'],'/v4', [TestVIewController::class, 'v4'])->name('v4r');
 Route::post('/v4', [TestVIewController::class, 'v4'])->name('v4r');
+Route::get('/v5', [TestVIewController::class, 'v5']);
+Route::get('/v55', [TestVIewController::class, 'v55']);
 
 Route::get('/test1', [TestController::class, 'test1']);
 // Route::get('/test1', 'App\Http\Controllers\TestController@test1');
